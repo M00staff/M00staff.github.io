@@ -1,0 +1,35 @@
+header {
+	color: black;
+	background-color: black;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+body {
+	background-color: yellow;
+}
+
+h1 {
+	text-decoration: underline;
+	text-align: left;
+	color: blue;
+	font-style: italic;
+	font-family: "Comic Sans MS";
+
+}
+
+ul {
+	text-align: left;
+	padding: 10px 50px 50px 50px;
+	list-style-type: square;
+
+}
+
+footer {
+	color: green;
+	font-family: cursive;
+	padding: 300px;
+	text-align: center;
+
+}
