@@ -1,0 +1,40 @@
+body{
+	background-color: yellow;
+	}
+
+.buttons{
+		text-align: center;
+		}
+
+
+
+.question{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	color: green;
+	padding-bottom: 0px;
+	}
+
+
+
+#textBox{
+		text-align: center;
+		padding-top: 10px;
+		}
+
+#submitButton{
+
+		}
+
+#begin{
+
+			}
+
+#resetButton  {
+
+		}
+
+p  {
+	font: green;
+	}
