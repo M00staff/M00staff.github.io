@@ -59,18 +59,12 @@ function(){
 }
 );
 
-//=================hover button
 
 
 
-// function getRandomInt(min, max) {
-//   return Math.floor(Math.random() * (max - min)) + min;
-// }
-// console.log(getRandomInt(1, 3));
 
 
-
-// 						============================================reset 
+//============================================reset button
 $('input').on('click' , function(){
 	points = 0;
 	alert('score reset you are now at '+points)
@@ -82,31 +76,7 @@ $('input').on('click' , function(){
 
 
 $('button').on('click' , function(){
-	//var choice = getRandomInt(1, 3);
-		for (var i = 0 ; i < questions.length ; i++) {
-
- 				// -------------------------------------trying to use innerHTML on the p tag 
- 				// $('.actualQuestion').text(questions[i].question);
-
- 				// 	$('#submitButton').on('click' , function(){
- 				// 			if ($('input').val() === questions[i].answer) {
- 				// 				alert('this def worked');
- 				// 			};
- 							
- 				// 	});
-
- 				
- 				// if ($('textBox').val() === questions[i].answer){
- 				// 		alert('this works');
- 				// 		points++;
- 				// 	}
- 				// else {
- 				// console.log(questions[i].question);
- 				// $('submitButton').on('click' , function(){
- 					
- 				// 	 console.log('thisworks2')
- 				// })
- 				// }		
+		for (var i = 0 ; i < questions.length ; i++) {		
 		//=======================================================prompting questions			
 		var answerDizzle = prompt(questions[i].question+'?')
 			if (answerDizzle === questions[i].answer) {
@@ -122,6 +92,13 @@ $('button').on('click' , function(){
 			}
 			
 		}
-			$('.actualQuestion').html('Game Over, your final score was '+points )
+			
+			if (points <= 0 ){
+			$('.actualQuestion').html('wow, not so hot, might want to try again - hit reset')
+			}
+
+			else {
+				$('.actualQuestion').html('Game Over - not bad your final score is above, hit reset to get back to zero')
+			}
 });
 
