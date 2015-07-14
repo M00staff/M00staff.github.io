@@ -1,4 +1,5 @@
 var points = 0;
+var activeQ =0;
 var questions = [
 	{
 	 question: 'question1' ,
@@ -41,7 +42,7 @@ shuffle(questions);
 
 
 //=================hover buttons 
-$('button').hover(function(){
+$('#begin').hover(function(){
 	$(this).text('you ready?')
 }
 ,
@@ -50,7 +51,7 @@ function(){
 }
 );
 
-$('input').hover(function(){
+$('#resetButton').hover(function(){
 	$(this).val('you sure?')
 }
 ,
@@ -70,19 +71,44 @@ function(){
 
 
 
-// 						============================================reset 
-$('input').on('click' , function(){
+//============================================reset 
+$('#resetButton').on('click' , function(){
 	points = 0;
 	alert('score reset you are now at '+points)
 	$('.question').html(points);
 });
 
 
+//=====================innerHTML
+
+$('#begin').on('click' , function(){
+
+		$('.actualQuestion').html(questions[activeQ].question);
+		console.log(questions[activeQ].question);
+		
+});
+
+$('#submitButton').on('click' , function(){
+			var answerDizzle = $('input').val();
+			if (answerDizzle === questions[activeQ].answer) {
+				points++;
+				alert('wow you are so smart, currently you have a score of '+points);
+				//questions.splice(i, 1);
+				$('.question').html(points);							
+			}
+			else {
+				points -= 1;
+				alert('WRONG!! you now have a score of '+points);
+				$('.question').html(points);
+			}
+})
 
 
-$('button').on('click' , function(){
+
+
+
 	//var choice = getRandomInt(1, 3);
-		for (var i = 0 ; i < questions.length ; i++) {
+		// for (var i = 0 ; i < questions.length ; i++) {
 
  				// -------------------------------------trying to use innerHTML on the p tag 
  				// $('.actualQuestion').text(questions[i].question);
@@ -107,20 +133,20 @@ $('button').on('click' , function(){
  				// })
  				// }		
 		//=======================================================prompting questions			
-		var answerDizzle = prompt(questions[i].question+'?')
-			if (answerDizzle === questions[i].answer) {
-				points++;
-				alert('wow you are so smart, currently you have a score of '+points);
-				//questions.splice(i, 1);
-				$('.question').html(points);							
-			}
-			else {
-				points -= 1;
-				alert('WRONG!! you now have a score of '+points);
-				$('.question').html(points);
-			}
+		// var answerDizzle = prompt(questions[i].question+'?')
+		// 	if (answerDizzle === questions[i].answer) {
+		// 		points++;
+		// 		alert('wow you are so smart, currently you have a score of '+points);
+		// 		//questions.splice(i, 1);
+		// 		$('.question').html(points);							
+		// 	}
+		// 	else {
+		// 		points -= 1;
+		// 		alert('WRONG!! you now have a score of '+points);
+		// 		$('.question').html(points);
+		// 	}
 			
-		}
-			$('.actualQuestion').html('Game Over, your final score was '+points )
-});
+		//}
+			//$('.actualQuestion').html('Game Over, your final score was '+points )
+//});
 

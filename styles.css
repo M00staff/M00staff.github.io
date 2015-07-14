@@ -25,26 +25,14 @@ body{
 			}
 
 button {
-	font-family: cursive;
-	font-size: 40px;
-	box-shadow: 10px 10px 5px grey;
-	border-radius: 25px;
-	background-color: red;
-	width: 240px;
-	height: 75px;
+
 }
 
 input{
-	font-family: cursive;
-	font-size: 40px;
-	box-shadow: 10px 10px 5px grey;
-	border-radius: 25px;
-	background-color: red;
-	width: 240px;
-	height: 75px;
+
 }
 
-input:hover{
+#reset:hover{
 	background-color: blue;
 }
 
@@ -53,13 +41,25 @@ button:hover{
 }
 
 #begin{
-
+	font-family: cursive;
+	font-size: 40px;
+	box-shadow: 10px 10px 5px grey;
+	border-radius: 25px;
+	background-color: red;
+	width: 240px;
+	height: 75px;
 	text-align: center;
 }
 
 #resetButton  {
 		text-align: center;
-
+	font-family: cursive;
+	font-size: 40px;
+	box-shadow: 10px 10px 5px grey;
+	border-radius: 25px;
+	background-color: red;
+	width: 240px;
+	height: 75px;
 		}
 
 p  {
