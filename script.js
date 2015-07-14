@@ -75,6 +75,7 @@ $('input').on('click' , function(){
 	points = 0;
 	alert('score reset you are now at '+points)
 	$('.question').html(points);
+	$('.actualQuestion').html('');
 });
 
 
