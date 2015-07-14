@@ -1,5 +1,5 @@
 var points = 0;
-var activeQ =0;
+var activeQ = 0;
 var questions = [
 	{
 	 question: 'question1' ,
@@ -101,7 +101,17 @@ $('#submitButton').on('click' , function(){
 				alert('WRONG!! you now have a score of '+points);
 				$('.question').html(points);
 			}
-})
+
+			if (activeQ < questions.length) {
+				activeQ++;
+				$('.actualQuestion').html(questions[activeQ].question);
+			}
+
+			else {
+				console.log('this worked')
+				$('actualQuestion').html('thanks for playing, click reset');
+			}
+});
 
 
 
