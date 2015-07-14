@@ -16,19 +16,19 @@ var questions = [
 	}
 ];
 
-//=========================================Fisher-Yates Algorithun 
+//=========================================Fisher-Yates Algorithm 
 function shuffle(array) {
     var counter = array.length, temp, index;
 
-    // While there are elements in the array
+// While there are elements in the array
     while (counter > 0) {
-        // Pick a random index
+// Pick a random index
         index = Math.floor(Math.random() * counter);
 
-        // Decrease counter by 1
+// Decrease counter by 1
         counter--;
 
-        // And swap the last element with it
+// And swap the last element with it
         temp = array[counter];
         array[counter] = array[index];
         array[index] = temp;
@@ -40,6 +40,14 @@ shuffle(questions);
 
 
 
+//=================hover button
+$('#begin').hover(function(){
+	$('this').html('you ready?')
+});
+//=================hover button
+
+
+
 // function getRandomInt(min, max) {
 //   return Math.floor(Math.random() * (max - min)) + min;
 // }
@@ -48,7 +56,7 @@ shuffle(questions);
 
 
 // 						============================================reset 
-$('#resetButton').on('click' , function(){
+$('input').on('click' , function(){
 	points = 0;
 	alert('score reset you are now at '+points)
 	$('.question').html(points);
@@ -57,19 +65,33 @@ $('#resetButton').on('click' , function(){
 
 
 
-$('#begin').on('click' , function(){
+$('button').on('click' , function(){
 	//var choice = getRandomInt(1, 3);
 		for (var i = 0 ; i < questions.length ; i++) {
 
  				// -------------------------------------trying to use innerHTML on the p tag 
- 				// $('p').text(questions[i].question);
- 				// $('submitButton').on('click' , function(){
- 				// 	if ($('input').val() === questions[i].answer){
+ 				// $('.actualQuestion').text(questions[i].question);
+
+ 				// 	$('#submitButton').on('click' , function(){
+ 				// 			if ($('input').val() === questions[i].answer) {
+ 				// 				alert('this def worked');
+ 				// 			};
+ 							
+ 				// 	});
+
+ 				
+ 				// if ($('textBox').val() === questions[i].answer){
  				// 		alert('this works');
- 				// 	} 
+ 				// 		points++;
+ 				// 	}
+ 				// else {
+ 				// console.log(questions[i].question);
+ 				// $('submitButton').on('click' , function(){
+ 					
+ 				// 	 console.log('thisworks2')
  				// })
-
-
+ 				// }		
+		//=======================================================prompting questions			
 		var answerDizzle = prompt(questions[i].question+'?')
 			if (answerDizzle === questions[i].answer) {
 				points++;
@@ -82,7 +104,8 @@ $('#begin').on('click' , function(){
 				alert('WRONG!! you now have a score of '+points);
 				$('.question').html(points);
 			}
+			
 		}
-
+			$('.actualQuestion').html('Game Over, your final score was '+points )
 });
 
