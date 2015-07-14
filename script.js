@@ -109,7 +109,7 @@ $('#submitButton').on('click' , function(){
 
 			else {
 				console.log('this worked')
-				$('actualQuestion').html('thanks for playing, click reset');
+				$('.actualQuestion').html('thanks for playing, click reset');
 			}
 });
 
