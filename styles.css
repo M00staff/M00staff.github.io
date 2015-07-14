@@ -44,12 +44,16 @@ input{
 	height: 75px;
 }
 
+input:hover{
+	background-color: blue;
+}
+
 button:hover{
 	background-color: yellow;
 }
 
 #begin{
-	font: sans-serif;
+
 	text-align: center;
 }
 

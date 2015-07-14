@@ -40,10 +40,25 @@ shuffle(questions);
 
 
 
-//=================hover button
-$('#begin').hover(function(){
-	$('this').html('you ready?')
-});
+//=================hover buttons 
+$('button').hover(function(){
+	$(this).text('you ready?')
+}
+,
+function(){
+	$(this).text('Begin')
+}
+);
+
+$('input').hover(function(){
+	$(this).val('you sure?')
+}
+,
+function(){
+	$(this).val('Reset')
+}
+);
+
 //=================hover button
 
 
