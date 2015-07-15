@@ -165,7 +165,7 @@ for (var i = 0 ; i < questions.length ; i++) {
 		var answerDizzle = prompt(questions[i].question+'?')
 			if (answerDizzle === questions[i].answer) {
 				points++;
-				alert('wow you are so smart, currently you have a score of '+points);
+				alert('Good job, currently you have a score of '+points);
 				$('.question').html(points);							
 			}
 			
@@ -175,7 +175,7 @@ for (var i = 0 ; i < questions.length ; i++) {
 
 			else {
 				points -= 1;
-				alert('WRONG!! you now have a score of '+points);
+				alert('WRONG!! Make sure to watch your spelling and caps.  You now have a score of '+points);
 				$('.question').html(points);
 			}
 			
