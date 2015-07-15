@@ -60,23 +60,27 @@ function(){
 }
 );
 
-//=================hover button
+$('#promptButton').hover(function(){
+	$(this).text('This button will use prompts for questions')
+}
+,
+function(){
+	$(this).text('Prompts?')
+}
+);
 
 
 
-// function getRandomInt(min, max) {
-//   return Math.floor(Math.random() * (max - min)) + min;
-// }
-// console.log(getRandomInt(1, 3));
 
 
-
-//============================================reset 
+//============================================reset button
 $('#resetDizzle').on('click' , function(){
 	points = 0;
 	alert('score reset you are now at '+points)
 	$('.question').html(points);
 	$('.actualQuestion').html('')
+	$('#textBox').val('');
+	var activeQ = 0;
 });
 
 
@@ -94,7 +98,7 @@ $('#submitButton').on('click' , function(){
 			if (answerDizzle === questions[activeQ].answer) {
 				points++;
 				alert('wow you are so smart, currently you have a score of '+points);
-				
+		//		$('.actualQuestion').text('');
 				$('.question').html(points);							
 			}
 			else {
@@ -117,14 +121,14 @@ $('#submitButton').on('click' , function(){
 
 
 
-
+//=======================================================prompting questions
 $('#promptButton').on('click' , function() {
 
 
 for (var i = 0 ; i < questions.length ; i++) {
 
  		
-		//=======================================================prompting questions			
+					
 		var answerDizzle = prompt(questions[i].question+'?')
 			if (answerDizzle === questions[i].answer) {
 				points++;

@@ -80,15 +80,15 @@ button#promptButton {
 	box-shadow: 10px 10px 5px grey;
 	border-radius: 25px;
 	background-color: red;
-	width: 240px;
+	width: 750px;
 	height: 75px;
 	text-align: center;
 }
 
 input#submitButton {
 	border-radius: 20px;
-	width: 200px;
-	height: 50px;
+	width: 100px;
+	height: 40px;
 	box-shadow: 10px 10px 5px grey;
 }
 
