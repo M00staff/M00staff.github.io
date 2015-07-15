@@ -4,6 +4,7 @@
 
 body{
 	background-color: lemonchiffon;
+	text-align: center;
 	}
 
 
@@ -32,15 +33,16 @@ input{
 
 }
 
-#reset:hover{
-	background-color: blue;
+input:hover{
+
 }
 
-button:hover{
-	background-color: yellow;
+button#begin:hover{
+	background-color: green;
+
 }
 
-#begin{
+button#begin{
 	font-family: cursive;
 	font-size: 40px;
 	box-shadow: 10px 10px 5px grey;
@@ -51,8 +53,9 @@ button:hover{
 	text-align: center;
 }
 
-#resetButton  {
-		text-align: center;
+
+input#resetDizzle  {
+	text-align: center;
 	font-family: cursive;
 	font-size: 40px;
 	box-shadow: 10px 10px 5px grey;
@@ -61,6 +64,10 @@ button:hover{
 	width: 240px;
 	height: 75px;
 		}
+
+#resetDizzle:hover{
+	background-color: yellow;
+}
 
 p  {
 	font: green;

@@ -51,7 +51,7 @@ function(){
 }
 );
 
-$('#resetButton').hover(function(){
+$('#resetDizzle').hover(function(){
 	$(this).val('you sure?')
 }
 ,
@@ -72,10 +72,11 @@ function(){
 
 
 //============================================reset 
-$('#resetButton').on('click' , function(){
+$('#resetDizzle').on('click' , function(){
 	points = 0;
 	alert('score reset you are now at '+points)
 	$('.question').html(points);
+	$('.actualQuestion').html('')
 });
 
 
@@ -93,7 +94,7 @@ $('#submitButton').on('click' , function(){
 			if (answerDizzle === questions[activeQ].answer) {
 				points++;
 				alert('wow you are so smart, currently you have a score of '+points);
-				//questions.splice(i, 1);
+				
 				$('.question').html(points);							
 			}
 			else {
@@ -109,7 +110,7 @@ $('#submitButton').on('click' , function(){
 
 			else {
 				console.log('this worked')
-				$('.actualQuestion').html('thanks for playing, click reset');
+				$('.actualQuestion').html('thanks for playing, click reset to reset your score');
 			}
 });
 
