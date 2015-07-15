@@ -118,46 +118,32 @@ $('#submitButton').on('click' , function(){
 
 
 
-	//var choice = getRandomInt(1, 3);
-		// for (var i = 0 ; i < questions.length ; i++) {
+$('#promptButton').on('click' , function() {
 
- 				// -------------------------------------trying to use innerHTML on the p tag 
- 				// $('.actualQuestion').text(questions[i].question);
 
- 				// 	$('#submitButton').on('click' , function(){
- 				// 			if ($('input').val() === questions[i].answer) {
- 				// 				alert('this def worked');
- 				// 			};
- 							
- 				// 	});
+for (var i = 0 ; i < questions.length ; i++) {
 
- 				
- 				// if ($('textBox').val() === questions[i].answer){
- 				// 		alert('this works');
- 				// 		points++;
- 				// 	}
- 				// else {
- 				// console.log(questions[i].question);
- 				// $('submitButton').on('click' , function(){
- 					
- 				// 	 console.log('thisworks2')
- 				// })
- 				// }		
+ 		
 		//=======================================================prompting questions			
-		// var answerDizzle = prompt(questions[i].question+'?')
-		// 	if (answerDizzle === questions[i].answer) {
-		// 		points++;
-		// 		alert('wow you are so smart, currently you have a score of '+points);
-		// 		//questions.splice(i, 1);
-		// 		$('.question').html(points);							
-		// 	}
-		// 	else {
-		// 		points -= 1;
-		// 		alert('WRONG!! you now have a score of '+points);
-		// 		$('.question').html(points);
-		// 	}
+		var answerDizzle = prompt(questions[i].question+'?')
+			if (answerDizzle === questions[i].answer) {
+				points++;
+				alert('wow you are so smart, currently you have a score of '+points);
+				//questions.splice(i, 1);
+				$('.question').html(points);							
+			}
 			
-		//}
-			//$('.actualQuestion').html('Game Over, your final score was '+points )
-//});
+			else if (answerDizzle === null){
+				break
+			}
+
+			else {
+				points -= 1;
+				alert('WRONG!! you now have a score of '+points);
+				$('.question').html(points);
+			}
+			
+		}
+			$('.actualQuestion').html('Game Over, your final score was '+points )
+});
 

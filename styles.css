@@ -20,6 +20,7 @@ body{
 	}
 
 .actualQuestion{
+			font-size: 20px;
 			border: 5px black;
 			text-align: center;
 			padding-bottom: 20px;
@@ -67,6 +68,32 @@ input#resetDizzle  {
 
 #resetDizzle:hover{
 	background-color: yellow;
+}
+
+button#promptButton:hover{
+	background-color: white;
+}
+
+button#promptButton {
+	font-family: cursive;
+	font-size: 40px;
+	box-shadow: 10px 10px 5px grey;
+	border-radius: 25px;
+	background-color: red;
+	width: 240px;
+	height: 75px;
+	text-align: center;
+}
+
+input#submitButton {
+	border-radius: 20px;
+	width: 200px;
+	height: 50px;
+	box-shadow: 10px 10px 5px grey;
+}
+
+input#textBox{
+	font-size: 25px;
 }
 
 p  {
