@@ -85,6 +85,11 @@ $('button').on('click' , function(){
 				//questions.splice(i, 1);
 				$('.question').html(points);							
 			}
+
+			else if (answerDizzle === null) {
+				break 
+			}
+
 			else {
 				points -= 1;
 				alert('WRONG!! you now have a score of '+points);
