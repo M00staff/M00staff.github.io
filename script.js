@@ -2,18 +2,53 @@ var points = 0;
 var activeQ = 0;
 var questions = [
 	{
-	 question: 'question1' ,
-	 answer: 'answer1'
+	 question: 'Name of Tony Sopranos boat in TV show The Sopranos' ,
+	 answer: 'The Stugots'
 	}
 	,
 	{
-	 question: 'question2' ,
-	 answer: 'answer2'
+	 question: 'Fill in the blank The _____ Biscuits are the greatest band in history' ,
+	 answer: 'Disco'
 	}
 	,
 	{
-	 question: 'question3' ,
-	 answer: 'answer3'
+	 question: 'Name of the Toronto Mayor that was caught smoking crack-cocaine' ,
+	 answer: 'Rob Ford'
+	}
+	,
+	{
+	 question: 'Name of the Washington DC Mayor that was caught smoking crack-cocaine' ,
+	 answer: 'Marion Barry'
+	}
+	,
+	{
+	 question: 'This Javascript Library makes DOM manipulation and selecting elements on page quite easy' ,
+	 answer: 'JQuery'
+	}
+	,
+	{
+	 question: 'This is a group of software development methods in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams.  Oppose to waterfall.' ,
+	 answer: 'Agile'
+	}
+	,
+	{
+	 question: 'What is whisky made in Scotland called' ,
+	 answer: 'Scotch'
+	}
+	,
+	{
+	 question: 'How much wood could a wood chuck, chuck if a woodchuck could chuck wood' ,
+	 answer: '2 trees'
+	}
+	,
+	{
+	 question: 'What color is the sky, generally' ,
+	 answer: 'blue'
+	}
+	,
+	{
+	 question: 'what year did columbus sail the ocean blue' ,
+	 answer: '1492'
 	}
 ];
 
