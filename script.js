@@ -102,7 +102,7 @@ $('#submitButton').on('click' , function(){
 				$('.question').html(points);
 			}
 
-			if (activeQ < questions.length) {
+			if (activeQ < questions.length-1) {
 				activeQ++;
 				$('.actualQuestion').html(questions[activeQ].question);
 			}
