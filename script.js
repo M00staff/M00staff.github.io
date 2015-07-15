@@ -111,11 +111,11 @@ function(){
 //============================================reset button
 $('#resetDizzle').on('click' , function(){
 	points = 0;
+	activeQ = 0;
 	alert('score reset you are now at '+points)
 	$('.question').html(points);
 	$('.actualQuestion').html('')
 	$('#textBox').val('');
-	var activeQ = 0;
 });
 
 
@@ -132,13 +132,12 @@ $('#submitButton').on('click' , function(){
 			var answerDizzle = $('input').val();
 			if (answerDizzle === questions[activeQ].answer) {
 				points++;
-				alert('wow you are so smart, currently you have a score of '+points);
-		//		$('.actualQuestion').text('');
+				alert('Got it - currently you have a score of '+points);
 				$('.question').html(points);							
 			}
 			else {
 				points -= 1;
-				alert('WRONG!! you now have a score of '+points);
+				alert('WRONG!! Watch your spelling and caps.  You now have a score of '+points);
 				$('.question').html(points);
 			}
 
@@ -148,7 +147,6 @@ $('#submitButton').on('click' , function(){
 			}
 
 			else {
-				console.log('this worked')
 				$('.actualQuestion').html('thanks for playing, click reset to reset your score');
 			}
 });
@@ -168,7 +166,6 @@ for (var i = 0 ; i < questions.length ; i++) {
 			if (answerDizzle === questions[i].answer) {
 				points++;
 				alert('wow you are so smart, currently you have a score of '+points);
-				//questions.splice(i, 1);
 				$('.question').html(points);							
 			}
 			
