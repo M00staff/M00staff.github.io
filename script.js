@@ -137,7 +137,7 @@ $('#submitButton').on('click' , function(){
 			}
 			else {
 				points -= 1;
-				alert('WRONG!! Watch your spelling and caps.  You now have a score of '+points);
+				alert('WRONG!! Watch your spelling and caps.  Corerct answer was '+questions[activeQ].answer);
 				$('.question').html(points);
 			}
 
@@ -175,7 +175,7 @@ for (var i = 0 ; i < questions.length ; i++) {
 
 			else {
 				points -= 1;
-				alert('WRONG!! Make sure to watch your spelling and caps.  You now have a score of '+points);
+				alert('WRONG, make sure to watch your spelling and caps.  Correct answer was '+questions[i].answer);
 				$('.question').html(points);
 			}
 			
