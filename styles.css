@@ -28,9 +28,10 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #FF00FF;
+    font-size: 3em;
+    color: purple;
     text-decoration: underline;
-    background-color: #FF704D;
+    background-color: lemonchiffon;
 }
 
 /* selected link */
