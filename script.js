@@ -78,7 +78,7 @@ shuffle(questions);
 
 //=================hover buttons 
 $('#begin').hover(function(){
-	$(this).text('you ready?')
+	$(this).text('Ready?')
 }
 ,
 function(){
@@ -87,7 +87,7 @@ function(){
 );
 
 $('#resetDizzle').hover(function(){
-	$(this).val('you sure?')
+	$(this).val('Are you sure?')
 }
 ,
 function(){
