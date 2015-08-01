@@ -183,3 +183,13 @@ for (var i = 0 ; i < questions.length ; i++) {
 			$('.actualQuestion').html('Game Over, your final score was '+points )
 });
 
+
+
+//====================== Enter submits
+   $('#textBox').keypress(function(e) {
+        if(e.which == 13) {
+            jQuery(this).blur();
+            jQuery('#submitButton').focus().click();
+        }
+    });
+
