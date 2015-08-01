@@ -3,42 +3,42 @@ var activeQ = 0;
 var questions = [
 	{
 	 question: 'Name of Tony Sopranos boat in TV show The Sopranos' ,
-	 answer: 'The Stugots'
+	 answer: 'the stugots'
 	}
 	,
 	{
 	 question: 'Fill in the blank The _____ Biscuits are the greatest band in history' ,
-	 answer: 'Disco'
+	 answer: 'disco'
 	}
 	,
 	{
 	 question: 'Name of the Toronto Mayor that was caught smoking crack-cocaine' ,
-	 answer: 'Rob Ford'
+	 answer: 'rob ford'
 	}
 	,
 	{
 	 question: 'Name of the Washington DC Mayor that was caught smoking crack-cocaine' ,
-	 answer: 'Marion Barry'
+	 answer: 'marion barry'
 	}
 	,
 	{
 	 question: 'This Javascript Library makes DOM manipulation and selecting elements on page quite easy' ,
-	 answer: 'JQuery'
+	 answer: 'jquery'
 	}
 	,
 	{
 	 question: 'This is a group of software development methods in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams.  Oppose to waterfall.' ,
-	 answer: 'Agile'
+	 answer: 'agile'
 	}
 	,
 	{
 	 question: 'What is whisky made in Scotland called' ,
-	 answer: 'Scotch'
+	 answer: 'scotch'
 	}
 	,
 	{
 	 question: 'How much wood could a wood chuck, chuck if a woodchuck could chuck wood' ,
-	 answer: '2 trees'
+	 answer: '42'
 	}
 	,
 	{
@@ -129,7 +129,8 @@ $('#begin').on('click' , function(){
 });
 
 $('#submitButton').on('click' , function(){
-			var answerDizzle = $('input').val();
+			var answerZizzle = $('input').val();
+			var answerDizzle = answerZizzle.toLowerCase()
 			if (answerDizzle === questions[activeQ].answer) {
 				points++;
 				alert('Got it - currently you have a score of '+points);
@@ -154,15 +155,15 @@ $('#submitButton').on('click' , function(){
 
 
 
-//=======================================================prompting questions
+//==========================================prompting questions
 $('#promptButton').on('click' , function() {
 
 
 for (var i = 0 ; i < questions.length ; i++) {
 
  		
-					
-		var answerDizzle = prompt(questions[i].question+'?')
+		var answerZizzle = prompt(questions[i].question+'?')
+		var answerDizzle = answerZizzle.toLowerCase()
 			if (answerDizzle === questions[i].answer) {
 				points++;
 				alert('Good job, currently you have a score of '+points);
