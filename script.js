@@ -18,3 +18,12 @@ function(){
 	$(this).text('Project 2')
 	}
 );
+
+$('#projectUX').hover(function() {
+	$(this).text("A group project of 4 Web Dev students and 2 UX Design students - an app that lets students submit comfort/completeness about a lesson after its been taught")
+	}
+,
+function(){
+	$(this).text('UX collaboration')
+	}
+);
