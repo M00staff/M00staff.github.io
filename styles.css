@@ -22,7 +22,7 @@ a {
 a:link {
     color: #FF0000;
     text-decoration: none;
-    background-color: #B2FF99;
+    /*background-color: lemonchiffon;*/
 }
 
 /* visited link */
@@ -35,7 +35,7 @@ a:visited {
 /* mouse over link */
 a:hover {
 		transition: all 1s ease;
-    font-size: 2em;
+    font-size: 1em;
     color: purple;
     text-decoration: underline;
     background-color: lemonchiffon;
