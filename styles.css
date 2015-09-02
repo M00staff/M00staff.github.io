@@ -1,11 +1,18 @@
 body{
 	background-color: lemonchiffon;
-	text-align: center;
 
 }
 
+h1{
+	text-align: center;
+}
+
+.foot{
+	text-align: center;
+}
+
 ul{
-	 list-style-type: none;
+	 list-style-type: square;
 }
 
 li {
