@@ -1,7 +1,7 @@
 //$('#project1').fadeIn(2000);
 
 $('#project1').hover(function() {
-	$(this).text("A simple trivia game using Javascript/JQuery, HTML and CSS")
+	$(this).text("A very simple trivia game using Javascript/JQuery, HTML and CSS")
 	}
 ,
 function(){
@@ -20,7 +20,7 @@ function(){
 );
 
 $('#projectUX').hover(function() {
-	$(this).text("Group project of 4 Dev students and 2 UX Design students - an app written with Ruby on Rails that lets students submit comfort/completeness about a lesson after its been taught")
+	$(this).text("A group project with UX Design students - an app written with Ruby on Rails that lets students submit comfort/completeness about a lesson after its been taught")
 	}
 ,
 function(){
@@ -29,7 +29,7 @@ function(){
 );
 
 $('#project3').hover(function() {
-	$(this).text("Group project written with an Express/Node backend.  The app utilizes Spotify's Echo Nest API as well as BandsinTown's API")
+	$(this).text("Group project written with an Express/Node backend.  The app utilizes multiple API's including Spotify's Echo Nest API as well as the BandsinTown API")
 	}
 ,
 function(){

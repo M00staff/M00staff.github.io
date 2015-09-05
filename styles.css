@@ -1,22 +1,30 @@
-body{
-	background-color: lemonchiffon;
+/*body{
 
-}
+}*/
 
-h1{
+/*.container{
+	border: 2px solid blue;
+}*/
+
+/*#footer{
+	position: absolute;
+}*/
+
+/*h1{
 	text-align: center;
 }
 
 .foot{
 	text-align: center;
-}
+}*/
 
 ul{
 	 list-style-type: square;
+		display: inline;
 }
 
 li {
-	margin: 3em 0em 0em 0em;
+	margin: 3em 0em 3em 0em;
 }
 
 /* normal link */
@@ -27,16 +35,16 @@ a {
 
 /* unvisited link */
 a:link {
-    color: #FF0000;
+    color: #0A2CEA;
     text-decoration: none;
     /*background-color: lemonchiffon;*/
 }
 
 /* visited link */
 a:visited {
-    color: #00FF00;
+    color: #0A2CEA;
     text-decoration: none;
-    background-color: #FFFF85;
+    /*background-color: #FFFF85;*/
 }
 
 /* mouse over link */
@@ -45,12 +53,68 @@ a:hover {
     font-size: 1em;
     color: purple;
     text-decoration: underline;
-    background-color: lemonchiffon;
 }
 
 /* selected link */
 a:active {
-    color: #0000FF;
+    color: #A917A2;
     text-decoration: underline;
-    background-color: #FF704D;
+    /*background-color: #FF704D;*/
 }
+
+
+/*====================================GRIDZ */
+
+.row, .column {
+	/* By default, box-sizing is set to content-box */
+  box-sizing: border-box;
+	overflow: auto;
+}
+
+.row {
+  /* Let's add a border so we can see our rows better */
+  border: 2px solid purple;
+}
+
+.column {
+  /* Let's add another border so we can see our columns better */
+  border: 2px solid blue;
+	float: left;
+	border-radius: 20px;
+	text-align: center;
+}
+
+
+.header > .column,
+.footer > .column {
+  padding: 25px;
+}
+
+.middle > .column {
+  height: 500px;
+  /*line-height: 2em;*/
+}
+
+/* Let's tweak our faux nav menu so it doesn't look as terrible */
+.header ul {
+  margin: auto;
+}
+
+.header li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+
+.column-1 { width: 8.333%; }
+.column-2 { width: 16.66%; }
+.column-3 { width: 25%; }
+.column-4 { width: 33.33%; }
+.column-5 { width: 41.66%; }
+.column-6 { width: 50%; }
+.column-7 { width: 58.33%; }
+.column-8 { width: 66.66%; }
+.column-9 { width: 75%; }
+.column-10 { width: 83.33%; }
+.column-11 { width: 91.66%; }
+.column-12 { width: 100%; }
