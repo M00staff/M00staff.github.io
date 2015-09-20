@@ -24,7 +24,7 @@ $('#projectUX').hover(function() {
 	}
 ,
 function(){
-	$(this).text('UX collaboration - The GA Anonymizer')
+	$(this).text('UX Collaboration - The GA Anonymizer')
 	}
 );
 
@@ -33,6 +33,15 @@ $('#project3').hover(function() {
 	}
 ,
 function(){
-	$(this).text('Project 4 - Playlisr')
+	$(this).text('Project 3 - Playlistr')
+	}
+);
+
+$('#project4').hover(function() {
+	$(this).text("Music app that displays and plays all live concert recordings uploaded to archive.org by the band Brothers Past.  App was written primarily in Angular and utilizes the archive's API")
+	}
+,
+function(){
+	$(this).text('Project 4 - BP Streams')
 	}
 );
